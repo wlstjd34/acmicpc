@@ -1,16 +1,20 @@
 package acmicpc;
 
-import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
-public class N1978Test {
+public class N1978Test extends AcmicpcTest<List<Integer>, Integer> {
+    @Override
+    @Before
+    public void before() {
+        caseList.add(new TestCase<>(List.of(1, 3, 5, 7), 3));
+    }
 
     @Test
+    @Override
     public void test() {
-        List<Integer> input = Arrays.asList(1, 3, 5, 7);
-        Assert.assertEquals(3, N1978.function(input));
+        defaultTesting(new N1978());
     }
 }

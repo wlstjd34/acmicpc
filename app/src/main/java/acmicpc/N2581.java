@@ -3,8 +3,8 @@ package acmicpc;
 import java.util.ArrayList;
 import java.util.List;
 
-public class N2581 {
-    public static ArrayList<Integer> function(List<Integer> inputs) {
+public class N2581 implements Problem<List<Integer>, List<Integer>> {
+    public List<Integer> function(List<Integer> inputs) {
         int intM = inputs.get(0);
         int intN = inputs.get(1);
         ArrayList<Integer> lists = new ArrayList<>();
